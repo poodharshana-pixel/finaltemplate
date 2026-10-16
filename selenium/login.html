@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login and Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            padding: 30px;
+        }
+        .box {
+            background: white;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 22px;
+            border-radius: 10px;
+        }
+        input, button {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            margin: 7px 0;
+        }
+        button {
+            background: #2459a9;
+            color: white;
+            border: 0;
+            cursor: pointer;
+        }
+        #loginMessage, #formMessage {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input id="username" placeholder="Username" required>
+        <input id="password" type="password"
+               placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p id="loginMessage"></p>
+</div>
+
+<div class="box">
+    <h2>Registration Form</h2>
+    <form id="registerForm">
+        <input id="name" placeholder="Full name" required>
+        <input id="email" type="email"
+               placeholder="Email address" required>
+        <input id="phone" type="tel"
+               placeholder="10-digit phone number"
+               pattern="[0-9]{10}" required>
+        <button type="submit">Register</button>
+    </form>
+    <p id="formMessage"></p>
+</div>
+
+<script>
+document.getElementById("loginForm").onsubmit = function(e) {
+    e.preventDefault();
+
+    const user = document.getElementById("username").value;
+    const pass = document.getElementById("password").value;
+
+    document.getElementById("loginMessage").textContent =
+        user === "admin" && pass === "12345"
+        ? "Login successful"
+        : "Invalid credentials";
+};
+
+document.getElementById("registerForm").onsubmit = function(e) {
+    e.preventDefault();
+    document.getElementById("formMessage").textContent =
+        "All fields are valid!";
+};
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login and Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            padding: 30px;
+        }
+        .box {
+            background: white;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 22px;
+            border-radius: 10px;
+        }
+        input, button {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            margin: 7px 0;
+        }
+        button {
+            background: #2459a9;
+            color: white;
+            border: 0;
+            cursor: pointer;
+        }
+        #loginMessage, #formMessage {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input id="username" placeholder="Username" required>
+        <input id="password" type="password"
+               placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p id="loginMessage"></p>
+</div>
+
+<div class="box">
+    <h2>Registration Form</h2>
+    <form id="registerForm">
+        <input id="name" placeholder="Full name" required>
+        <input id="email" type="email"
+               placeholder="Email address" required>
+        <input id="phone" type="tel"
+               placeholder="10-digit phone number"
+               pattern="[0-9]{10}" required>
+        <button type="submit">Register</button>
+    </form>
+    <p id="formMessage"></p>
+</div>
+
+<script>
+document.getElementById("loginForm").onsubmit = function(e) {
+    e.preventDefault();
+
+    const user = document.getElementById("username").value;
+    const pass = document.getElementById("password").value;
+
+    document.getElementById("loginMessage").textContent =
+        user === "admin" && pass === "12345"
+        ? "Login successful"
+        : "Invalid credentials";
+};
+
+document.getElementById("registerForm").onsubmit = function(e) {
+    e.preventDefault();
+    document.getElementById("formMessage").textContent =
+        "All fields are valid!";
+};
+</script>
+
+</body>
+</html>
