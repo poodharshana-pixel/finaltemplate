@@ -1,0 +1,9 @@
+<!ELEMENT appointments (appointment+)>
+<!ELEMENT appointment (customerName, phone, gender, service, stylist, date, timeSlot)>
+<!ELEMENT customerName (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT service (#PCDATA)>
+<!ELEMENT stylist (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT timeSlot (#PCDATA)>

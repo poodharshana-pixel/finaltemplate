@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE appointments [
+  <!ELEMENT appointments (appointment+)>
+  <!ELEMENT appointment (customerName, phone, gender, service, stylist, date, timeSlot)>
+  <!ELEMENT customerName (#PCDATA)>
+  <!ELEMENT phone (#PCDATA)>
+  <!ELEMENT gender (#PCDATA)>
+  <!ELEMENT service (#PCDATA)>
+  <!ELEMENT stylist (#PCDATA)>
+  <!ELEMENT date (#PCDATA)>
+  <!ELEMENT timeSlot (#PCDATA)>
+]>
+<appointments>
+  <appointment><customerName>Meena</customerName><phone>9876543210</phone><gender>Female</gender><service>Hair Spa</service><stylist>Anu</stylist><date>2026-10-20</date><timeSlot>10:00</timeSlot></appointment>
+  <appointment><customerName>Arun</customerName><phone>9876543211</phone><gender>Male</gender><service>Haircut</service><stylist>Ravi</stylist><date>2026-10-20</date><timeSlot>11:00</timeSlot></appointment>
+  <appointment><customerName>Zara</customerName><phone>9876543212</phone><gender>Other</gender><service>Facial</service><stylist>Kavi</stylist><date>2026-10-21</date><timeSlot>12:00</timeSlot></appointment>
+</appointments>
